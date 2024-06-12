@@ -6,11 +6,9 @@ from datetime import datetime
 
 
 with DAG(
-   dag_id="dag_aws_teste",
-   start_date=datetime(2023, 10, 16),
-    # Intervalo de tempo que nossa orquestração irá rodar
-   schedule_interval="* * * * *",
-    # A partir da nossa start_date até hoje, o catchup caso seja True, todos os dags que não foram executados serão executados a partir da criação de uma nova dag
+   dag_id="dag_creation_bucket_s3",
+   start_date=datetime(2024, 5,10),
+   schedule_interval="@once",
    catchup=False,
 ) as dag:
    task1 = BashOperator(
