@@ -24,24 +24,3 @@ with open(json_file_path, 'w') as file:
 print(f"Updated paths in {json_file_path}")
 
 
-# List buckets:
-#aws s3 ls --endpoint-url http://localhost:4566 --recursive --human-readable
-
-#aws s3 mb s3://my-bucket --endpoint-url http://localhost:4566
-#aws configure list
-
-# Create Bucket
-#aws --endpoint-url=http://localhost:4566 s3 mb s3://test
-
-# Bucket ACL
-#aws --endpoint-url=http://localhost:4566 s3api put-bucket-acl --bucket test --acl public-read
-
-# Copy to Bucket
-#aws --endpoint-url=http://localhost:4566 s3 cp /tmp/test.tar  s3://test-bucket/test.tar
-
-# ls bucket
-# aws --endpoint-url=http://localhost:4566 s3 ls s3://test/
-
-# Download
-#aws --endpoint-url http://localhost:4566 s3 cp s3://test/order_details.csv C:/Github/meltano
-

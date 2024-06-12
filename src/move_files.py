@@ -2,11 +2,13 @@ import os
 import datetime
 import shutil
 
+# identificação do arquivo csv provindo do bucket, cria pasta segundo a regra e move o arquivo
 source_path_csv = os.path.join(os.getcwd(),f'data/order_details.csv')
-destination_path_csv = os.path.join(os.getcwd(),f'data/csv/{datetime.date.today()}')  # Altere conforme necessário
+destination_path_csv = os.path.join(os.getcwd(),f'data/csv/{datetime.date.today()}')  
 os.makedirs(destination_path_csv, exist_ok=True)
 shutil.move(source_path_csv, destination_path_csv)
 
+# identificação dos arquivos csv provindo do banco de dados, cria pasta segundo a regra e move os arquivos
 source_path_postgres = os.path.join(os.getcwd(),f'data/')
 files = os.listdir(source_path_postgres)
 files = [file for file in files if file.endswith(".csv")]
