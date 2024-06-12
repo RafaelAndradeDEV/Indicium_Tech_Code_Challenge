@@ -1,0 +1,68 @@
+version: 1
+default_environment: dev
+project_id: 2b6232fd-797f-4b1a-aba1-08cadd86ec8a
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-s3-csv
+    variant: transferwise
+    pip_url: pipelinewise-tap-s3-csv
+    config:
+      aws_profile: ''
+      bucket: test
+      start_date: '2024-06-05T00:00:00Z'
+      tables: [{search_prefix: '', search_pattern: .csv, table_name: order_details,
+          delimiter: ',', key_properties: [order_id]}]
+      metadata:
+      '*':
+        replication-method: INCREMENTAL
+        replication-key: id
+
+
+  - name: tap-postgres
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-postgres.git
+    config:
+      database: northwind
+      host: localhost
+      port: 5432
+      sqlalchemy_url: postgresql://northwind_user:thewindisblowing@localhost:5432/northwind
+      user: northwind_user
+      default_replication_method: INCREMENTAL
+      filter_schemas:
+      - public
+
+
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    config:
+      csv_files_definition: ${PWD}/files_def.json
+      add_metadata_columns: false
+  loaders:
+  - name: target-postgres
+    variant: meltanolabs
+    pip_url: meltanolabs-target-postgres
+    config:
+      database: final_db
+      host: localhost
+      port: 5434
+      sqlalchemy_url: postgresql://rafael:rafaeldev@localhost:5434/final_db
+      user: rafael
+      
+
+  - name: target-csv
+    variant: hotgluexyz
+    pip_url: git+https://github.com/hotgluexyz/target-csv.git
+    config:
+      destination_path: ${PWD}/data
+
+##  mount volume data
+##  meltano run tap-s3-csv target-csv
+##  meltano run tap-postgres target-csv
+##  python rename_files.py
+##  meltano run tap-csv target-postgres 
+##  python move_files.py

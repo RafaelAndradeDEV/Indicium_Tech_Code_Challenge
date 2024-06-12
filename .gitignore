@@ -1,0 +1,6 @@
+logs/
+/venv
+/.meltano
+.env
+.git
+/dbdata

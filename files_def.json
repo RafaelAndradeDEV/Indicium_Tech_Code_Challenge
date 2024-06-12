@@ -1,0 +1,93 @@
+[
+  {
+    "entity": "order_details",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/order_details.csv",
+    "keys": [
+      "order_id",
+      "product_id"
+    ]
+  },
+  {
+    "entity": "public_categories",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-categories.csv",
+    "keys": [
+      "category_id"
+    ]
+  },
+  {
+    "entity": "public-customers",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-customers.csv",
+    "keys": [
+      "customer_id"
+    ]
+  },
+  {
+    "entity": "public-employee_territories",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-employee_territories.csv",
+    "keys": [
+      "employee_id",
+      "territory_id"
+    ]
+  },
+  {
+    "entity": "public-employees",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-employees.csv",
+    "keys": [
+      "employee_id"
+    ]
+  },
+  {
+    "entity": "public-orders",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-orders.csv",
+    "keys": [
+      "order_id",
+      "customer_id",
+      "employee_id"
+    ]
+  },
+  {
+    "entity": "public-products",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-products.csv",
+    "keys": [
+      "product_id",
+      "supplier_id",
+      "category_id"
+    ]
+  },
+  {
+    "entity": "public-region",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-region.csv",
+    "keys": [
+      "region_id"
+    ]
+  },
+  {
+    "entity": "public-shippers",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-shippers.csv",
+    "keys": [
+      "shipper_id"
+    ]
+  },
+  {
+    "entity": "public-suppliers",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-suppliers.csv",
+    "keys": [
+      "supplier_id"
+    ]
+  },
+  {
+    "entity": "public-territories",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-territories.csv",
+    "keys": [
+      "territory_id",
+      "region_id"
+    ]
+  },
+  {
+    "entity": "public-us_states",
+    "path": "/mnt/c/github/Indicium_Tech_Code_Challenge/data/public-us_states.csv",
+    "keys": [
+      "state_id"
+    ]
+  }
+]
