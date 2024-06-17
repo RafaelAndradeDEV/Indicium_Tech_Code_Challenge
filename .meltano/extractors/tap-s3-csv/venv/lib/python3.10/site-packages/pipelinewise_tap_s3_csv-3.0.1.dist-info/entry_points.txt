@@ -1,0 +1,2 @@
+[console_scripts]
+tap-s3-csv = tap_s3_csv:main
