@@ -27,9 +27,9 @@ plugins:
     pip_url: git+https://github.com/MeltanoLabs/tap-postgres.git
     config:
       database: northwind
-      host: localhost
+      host: postgres_db2
       port: 5432
-      sqlalchemy_url: postgresql://northwind_user:thewindisblowing@localhost:5432/northwind
+      sqlalchemy_url: postgresql://northwind_user:thewindisblowing@postgres_db2:5432/northwind
       user: northwind_user
       default_replication_method: INCREMENTAL
       filter_schemas:
@@ -47,10 +47,12 @@ plugins:
     variant: meltanolabs
     pip_url: meltanolabs-target-postgres
     config:
+      activate_version: false
+      add_record_metadata: false
       database: final_db
-      host: localhost
+      host: postgres_db3
       port: 5434
-      sqlalchemy_url: postgresql://rafael:rafaeldev@localhost:5434/final_db
+      sqlalchemy_url: postgresql://rafael:rafaeldev@postgres_db3:5432/final_db
       user: rafael
       
 
@@ -60,9 +62,3 @@ plugins:
     config:
       destination_path: ${PWD}/data
 
-##  mount volume data
-##  meltano run tap-s3-csv target-csv
-##  meltano run tap-postgres target-csv
-##  python rename_files.py
-##  meltano run tap-csv target-postgres 
-##  python move_files.py

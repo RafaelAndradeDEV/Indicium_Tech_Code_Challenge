@@ -1,30 +1,29 @@
 import os
 import re
 
-# Diretório onde os arquivos estão localizados
-directory = os.path.join(os.getcwd(),'data/')  # Altere conforme necessário
-print(directory)
-# Padrão regex para arquivos com formato order_details-YYYYMMDDTHHMMSS.csv
+# Directory where the files are located
+directory = os.path.join(os.getcwd(),'data/') 
+
+# Regex pattern for files with order_details-YYYYMMDDTHHMMSS.csv format
 pattern = re.compile(r'^(.*)-\d{8}T\d{6}\.csv$')
 
-# Itera sobre cada arquivo no diretório
 for filename in os.listdir(directory):
     match = pattern.match(filename)
     if match:
-        # Extrai o prefixo (antes do timestamp)
+        # Extract the prefix (before timestamp)
         prefix = match.group(1)
         
-        # Cria o novo nome de arquivo
+        # Create new file name
         new_name = f"{prefix}.csv"
         
-        # Caminhos completos dos arquivos
+        # Full file paths
         old_file = os.path.join(directory, filename)
         new_file = os.path.join(directory, new_name)
         
-        # Renomeia o arquivo
+        # Rename file
         os.rename(old_file, new_file)
         
-        print(f"Arquivo '{filename}' renomeado para '{new_name}'.")
+        print(f"File '{filename}' renamed to '{new_name}'.")
 
-print("Todos os arquivos correspondentes foram renomeados.")
+print("All matching files have been renamed.")
 

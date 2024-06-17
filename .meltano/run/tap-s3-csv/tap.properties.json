@@ -1,0 +1,160 @@
+{
+  "streams": [
+    {
+      "stream": "order_details",
+      "tap_stream_id": "order_details",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "product_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "unit_price": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "quantity": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "discount": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "_sdc_source_bucket": {
+            "type": "string"
+          },
+          "_sdc_source_file": {
+            "type": "string"
+          },
+          "_sdc_source_lineno": {
+            "type": "integer"
+          },
+          "_sdc_extra": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "order_id"
+            ],
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "order_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "product_id"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unit_price"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "quantity"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "discount"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_source_bucket"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_source_file"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_source_lineno"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_extra"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    }
+  ]
+}

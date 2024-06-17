@@ -1,16 +1,20 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from datetime import datetime
-
-# docker run -it -v C:/Github:/project meltano/meltano init
+from datetime import datetime, timedelta
+from airflow.sensors.external_task import ExternalTaskSensor
 
 
 with DAG(
-   dag_id="dag_creation_bucket_s3",
-   start_date=datetime(2024, 5,10),
-   schedule_interval="@once",
-   catchup=False,
+   dag_id="create_s3_bucket_aws",
+   start_date=datetime(2024, 6, 7, 12, 0, 0),
+   schedule_interval="0 12 * * *",
+   catchup=True,
+   max_active_runs=1,
 ) as dag:
+   sleep = BashOperator(
+      task_id = "sleep",
+      bash_command="sleep 40"
+   )
    task1 = BashOperator(
       task_id = "create_bucket",
       bash_command="aws s3 mb s3://test --endpoint-url http://localstack:4566"
@@ -21,9 +25,9 @@ with DAG(
    )
    task3 = BashOperator(
       task_id = "send_archive",
-      bash_command="aws --endpoint-url=http://localstack:4566 s3 cp /opt/airflow/data_provided/order_details.csv  s3://test/order_details.csv"
+      bash_command="aws --endpoint-url=http://localstack:4566 s3 cp /opt/airflow/data_provided/order_details.csv  s3://test/order_details-{{ ds }}.csv"
    )
 
    
-   task1>>task2>>task3
+   sleep>>task1>>task2>>task3
    

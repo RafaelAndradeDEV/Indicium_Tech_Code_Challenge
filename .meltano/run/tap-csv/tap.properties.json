@@ -1,0 +1,1798 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "order_details",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "order_id",
+        "product_id"
+      ],
+      "schema": {
+        "properties": {
+          "order_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "product_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unit_price": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "quantity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "discount": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "_sdc_source_bucket": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "_sdc_source_file": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "_sdc_source_lineno": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "order_details",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "order_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "product_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unit_price"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "quantity"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "discount"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_source_bucket"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_source_file"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_sdc_source_lineno"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "order_id",
+              "product_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-customers",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "customer_id"
+      ],
+      "schema": {
+        "properties": {
+          "customer_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fax": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-customers",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "company_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_title"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "fax"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "customer_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-employee_territories",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "employee_id",
+        "territory_id"
+      ],
+      "schema": {
+        "properties": {
+          "employee_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "territory_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-employee_territories",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "employee_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "territory_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "employee_id",
+              "territory_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-employees",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "employee_id"
+      ],
+      "schema": {
+        "properties": {
+          "employee_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "first_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title_of_courtesy": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "birth_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hire_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "home_phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "extension": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "photo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reports_to": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "photo_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-employees",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "employee_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "last_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "first_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "title"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "title_of_courtesy"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "birth_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hire_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "home_phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "extension"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "photo"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "notes"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reports_to"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "photo_path"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "employee_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-orders",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "order_id",
+        "customer_id",
+        "employee_id"
+      ],
+      "schema": {
+        "properties": {
+          "order_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "customer_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "employee_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "order_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "shipped_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_via": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "freight": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-orders",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "order_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "employee_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "order_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "required_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "shipped_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_via"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "freight"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "order_id",
+              "customer_id",
+              "employee_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-products",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "product_id",
+        "supplier_id",
+        "category_id"
+      ],
+      "schema": {
+        "properties": {
+          "product_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "product_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "supplier_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "category_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "quantity_per_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unit_price": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "units_in_stock": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "units_on_order": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reorder_level": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "discontinued": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-products",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "product_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "product_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supplier_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "category_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "quantity_per_unit"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unit_price"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "units_in_stock"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "units_on_order"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reorder_level"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "discontinued"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "product_id",
+              "supplier_id",
+              "category_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-region",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "region_id"
+      ],
+      "schema": {
+        "properties": {
+          "region_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region_description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-region",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "region_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region_description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "region_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-shippers",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "shipper_id"
+      ],
+      "schema": {
+        "properties": {
+          "shipper_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-shippers",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "shipper_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "company_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "shipper_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-suppliers",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "supplier_id"
+      ],
+      "schema": {
+        "properties": {
+          "supplier_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fax": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "homepage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-suppliers",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "supplier_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "company_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_title"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "fax"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "homepage"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "supplier_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-territories",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "territory_id",
+        "region_id"
+      ],
+      "schema": {
+        "properties": {
+          "territory_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "territory_description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-territories",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "territory_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "territory_description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "territory_id",
+              "region_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-us_states",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "state_id"
+      ],
+      "schema": {
+        "properties": {
+          "state_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state_abbr": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state_region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public-us_states",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "state_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state_abbr"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state_region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "state_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public_categories",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "category_id"
+      ],
+      "schema": {
+        "properties": {
+          "category_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "category_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "picture": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "public_categories",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "category_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "category_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "picture"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "selected-by-default": true,
+            "table-key-properties": [
+              "category_id"
+            ]
+          }
+        }
+      ],
+      "selected": true
+    }
+  ]
+}

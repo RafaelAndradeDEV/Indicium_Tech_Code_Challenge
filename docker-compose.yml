@@ -45,6 +45,12 @@
 # Feel free to modify this file to suit your needs.
 ---
 
+x-meltano-image: &meltano-image
+  image: meltano/meltano
+  volumes:
+    - ${AIRFLOW_PROJ_DIR:-.}/.meltano:/opt/airflow
+    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow
+    
 
 x-airflow-common:
   &airflow-common
@@ -53,6 +59,8 @@ x-airflow-common:
   # and uncomment the "build" line below, Then run `docker-compose build` to build the images.
   #image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.9.1}
   build: .
+  env_file:
+      - .env
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
@@ -62,10 +70,7 @@ x-airflow-common:
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'false'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
-    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
-    AWS_ACCESS_KEY_ID: test
-    AWS_SECRET_ACCESS_KEY: test
-    AWS_DEFAULT_REGION: us-east-1
+    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session' 
     # yamllint disable rule:line-length
     # Use simple http server on scheduler for health checks
     # See https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/check-health.html#scheduler-health-check-server
@@ -78,12 +83,17 @@ x-airflow-common:
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
   volumes:
-    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
+    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags 
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/data_provided:/opt/airflow/data_provided
     - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
     - ${AIRFLOW_PROJ_DIR:-.}/src:/opt/airflow/src
+
+    #- ${AIRFLOW_PROJ_DIR:-.}/.meltano:/opt/airflow/.meltano
+    #- ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
+    #- ${AIRFLOW_PROJ_DIR:-.}/meltano.yaml:/opt/airflow/meltano.yaml
+    
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
@@ -94,6 +104,7 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+    
   postgres:
     image: postgres:13
     environment:
@@ -154,6 +165,8 @@ services:
     environment:
       - SERVICES=s3
       - DEBUG=1
+    env_file:
+      - .env
 
   aws-cli:
     image: amazon/aws-cli
@@ -165,10 +178,15 @@ services:
       <<: *airflow-common-env
   
   meltano:
-    <<: *airflow-common
+    <<: *meltano-image
     image: meltano/meltano
     entrypoint: /bin/bash
     tty: true
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    restart: unless-stopped
     environment:      
       <<: *airflow-common-env
       

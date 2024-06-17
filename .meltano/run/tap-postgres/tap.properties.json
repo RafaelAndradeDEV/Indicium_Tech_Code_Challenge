@@ -1,0 +1,1821 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "public-employee_territories",
+      "table_name": "employee_territories",
+      "replication_method": "",
+      "key_properties": [
+        "employee_id",
+        "territory_id"
+      ],
+      "schema": {
+        "properties": {
+          "employee_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "territory_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "employee_id",
+          "territory_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-employee_territories",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "employee_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "territory_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "employee_id",
+              "territory_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-products",
+      "table_name": "products",
+      "replication_method": "",
+      "key_properties": [
+        "product_id"
+      ],
+      "schema": {
+        "properties": {
+          "product_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "product_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "supplier_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "category_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "quantity_per_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unit_price": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "units_in_stock": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "units_on_order": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "reorder_level": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "discontinued": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "product_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-products",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "product_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "product_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supplier_id"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "category_id"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "quantity_per_unit"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unit_price"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "units_in_stock"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "units_on_order"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reorder_level"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "discontinued"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "product_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-customer_demographics",
+      "table_name": "customer_demographics",
+      "replication_method": "",
+      "key_properties": [
+        "customer_type_id"
+      ],
+      "schema": {
+        "properties": {
+          "customer_type_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "customer_desc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "customer_type_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-customer_demographics",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_type_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_desc"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "customer_type_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-us_states",
+      "table_name": "us_states",
+      "replication_method": "",
+      "key_properties": [
+        "state_id"
+      ],
+      "schema": {
+        "properties": {
+          "state_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "state_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state_abbr": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state_region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "state_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-us_states",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "state_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state_abbr"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state_region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "state_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-customers",
+      "table_name": "customers",
+      "replication_method": "",
+      "key_properties": [
+        "customer_id"
+      ],
+      "schema": {
+        "properties": {
+          "customer_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fax": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "customer_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-customers",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "company_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_title"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "fax"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "customer_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-orders",
+      "table_name": "orders",
+      "replication_method": "",
+      "key_properties": [
+        "order_id"
+      ],
+      "schema": {
+        "properties": {
+          "order_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "customer_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "employee_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "order_date": {
+            "format": "date",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required_date": {
+            "format": "date",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "shipped_date": {
+            "format": "date",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_via": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "freight": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ship_country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "order_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-orders",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "order_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_id"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "employee_id"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "order_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "required_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "shipped_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_via"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "freight"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ship_country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "order_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-employees",
+      "table_name": "employees",
+      "replication_method": "",
+      "key_properties": [
+        "employee_id"
+      ],
+      "schema": {
+        "properties": {
+          "employee_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "last_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "first_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title_of_courtesy": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "birth_date": {
+            "format": "date",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hire_date": {
+            "format": "date",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "home_phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "extension": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "photo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reports_to": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "photo_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "employee_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-employees",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "employee_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "last_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "first_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "title"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "title_of_courtesy"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "birth_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hire_date"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "home_phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "extension"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "photo"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "notes"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reports_to"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "photo_path"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "employee_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-shippers",
+      "table_name": "shippers",
+      "replication_method": "",
+      "key_properties": [
+        "shipper_id"
+      ],
+      "schema": {
+        "properties": {
+          "shipper_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "shipper_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-shippers",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "shipper_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "company_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "shipper_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-categories",
+      "table_name": "categories",
+      "replication_method": "",
+      "key_properties": [
+        "category_id"
+      ],
+      "schema": {
+        "properties": {
+          "category_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "category_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "picture": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "category_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-categories",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "category_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "category_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "picture"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "category_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-suppliers",
+      "table_name": "suppliers",
+      "replication_method": "",
+      "key_properties": [
+        "supplier_id"
+      ],
+      "schema": {
+        "properties": {
+          "supplier_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "postal_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fax": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "homepage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "supplier_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-suppliers",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "supplier_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "company_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contact_title"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "postal_code"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "fax"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "homepage"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "supplier_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-region",
+      "table_name": "region",
+      "replication_method": "",
+      "key_properties": [
+        "region_id"
+      ],
+      "schema": {
+        "properties": {
+          "region_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "region_description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "region_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-region",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "region_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region_description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "region_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-territories",
+      "table_name": "territories",
+      "replication_method": "",
+      "key_properties": [
+        "territory_id"
+      ],
+      "schema": {
+        "properties": {
+          "territory_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "territory_description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "territory_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-territories",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "territory_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "territory_description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region_id"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "territory_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "public-customer_customer_demo",
+      "table_name": "customer_customer_demo",
+      "replication_method": "",
+      "key_properties": [
+        "customer_id",
+        "customer_type_id"
+      ],
+      "schema": {
+        "properties": {
+          "customer_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "customer_type_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "customer_id",
+          "customer_type_id"
+        ]
+      },
+      "is_view": false,
+      "stream": "public-customer_customer_demo",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customer_type_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": [
+              "customer_id",
+              "customer_type_id"
+            ],
+            "forced-replication-method": "",
+            "schema-name": "public",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    }
+  ]
+}
